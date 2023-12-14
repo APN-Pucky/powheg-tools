@@ -4,13 +4,9 @@ import pylhe
 import sys
 import numpy as np
 
-v_abs_max=0
-i_abs_max = 0
-f_abs_max = ""
+abs_max=[]
 
-v_rel_max=0
-i_rel_max=0
-f_rel_max=""
+rel_max=[]
 
 for arg in sys.argv[1:]:
     for i,event in enumerate(pylhe.read_lhe_with_attributes(arg)):
@@ -24,13 +20,10 @@ for arg in sys.argv[1:]:
         rel_difference = max_difference / np.average(warr)
 
         if max_difference > v_abs_max:
-            v_abs_max = max_difference
-            i_abs_max = i
-            f_abs_max = arg
+            abs_max.append( ( max_difference,i,arg))
         if rel_difference > v_rel_max:
-            v_rel_max = rel_difference
-            i_rel_max = i
-            f_rel_max = arg
+            rel_max.append( ( max_difference,i,arg))
+            rel_max = rel_difference
         #print(i,max_difference)
     #print(pylhe.read_lhe_init(arg))
 print(sys.argv[1:])
