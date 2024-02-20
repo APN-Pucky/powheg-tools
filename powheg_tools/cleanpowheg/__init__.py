@@ -9,7 +9,7 @@ def main():
 
     # Adding optional argument with default value
     parser.add_argument(
-        "--path", default=".", type=str, help="path to powheg directory"
+        "-p", "--path", default=".", type=str, help="path to powheg directory"
     )
 
     args = parser.parse_args()
