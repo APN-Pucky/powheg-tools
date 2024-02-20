@@ -7,9 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+scikit-learn = "*"
 
 [tool.poetry.scripts]
 cleanpowheg = "powheg_tools.cleanpowheg:main"
+genpwgseeds = "powheg_tools.genpwgseeds:main"
+geninitrwgt = "powheg_tools.geninitrwgt:main"
+rivet_pdf_rename = "powheg_tools.rivet_pdf_rename:main"
+yoda-auc = "powheg_tools.yoda_auc:main"
 
 [build-system]
 requires = ["poetry-core"]

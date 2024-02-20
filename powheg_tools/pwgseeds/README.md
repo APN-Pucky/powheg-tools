@@ -1,1 +1,0 @@
-Generate equidistante seed numbers, such that individual bad seeds can easily be increased without producing conflicting seeds or too long seeds
