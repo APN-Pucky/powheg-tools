@@ -1,5 +1,7 @@
 # Some useful powheg scripts
 
+[![PyPI version][pypi image]][pypi link] [![PyPI version][pypi versions]][pypi link]  ![downloads](https://img.shields.io/pypi/dm/smpl.svg)
+
 ## Install
 
 To install the scripts, simply run the following command:
@@ -33,3 +35,7 @@ Generates the initrwgt block for specific pdf and scale variations. The script i
 ```bash
 $ geninitrwgt cteq66
 ```
+
+[pypi image]: https://badge.fury.io/py/powheg-tools.svg
+[pypi link]: https://pypi.org/project/powheg-tools/
+[pypi versions]: https://img.shields.io/pypi/pyversions/powheg-tools.svg
