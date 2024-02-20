@@ -6,9 +6,14 @@ def main():
 
     parser = argparse.ArgumentParser(description="Clean up powheg directory")
 
-    parser.add_argument("path", type=str, help="path to powheg directory", default=".")
+    # Adding optional argument with default value
+    parser.add_argument("path", nargs="?", type=str, help="path to powheg directory")
 
     args = parser.parse_args()
+
+    # Accessing optional argument
+    path = args.path if args.path else "."
+
     # remove single file
     for f in [
         "bornequiv",
@@ -29,7 +34,9 @@ def main():
         "pwhg_checklimits",
         "virtequiv",
     ]:
-        os.remove(os.path.join(args.path, f))
+        p = os.path.join(path, f)
+        if os.path.exists(p):
+            os.remove(p)
     # remove parallel run files
     # TODO
 
