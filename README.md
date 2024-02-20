@@ -10,6 +10,14 @@ To install the scripts, simply run the following command:
 $ pip install powheg-tools
 ```
 
+## pytopdrawer
+
+Plot powheg top files:
+
+```bash
+$ pytopdrawer pwg-btl.top
+```
+
 ## cleanpowheg
 
 This script is used to clean the powheg output files. It is useful to clean the output files before running the next iteration of the powheg process. The script is used as follows:
@@ -34,6 +42,15 @@ Generates the initrwgt block for specific pdf and scale variations. The script i
 
 ```bash
 $ geninitrwgt cteq66
+```
+
+
+## pypowhegparse
+
+Scan for errors in powheg output files. The script is used as follows:
+
+```bash
+pypowhegparse [-f powheg/folder/here] [...]
 ```
 
 [pypi image]: https://badge.fury.io/py/powheg-tools.svg
