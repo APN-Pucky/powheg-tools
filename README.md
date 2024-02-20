@@ -25,3 +25,11 @@ $ genpwgseeds [-n 10] [...]
 ```
 
 Generates equidistante seed numbers, such that individual bad seeds can easily be increased without producing conflicting seeds or too long seeds
+
+## geninitrwgt
+
+Generates the initrwgt block for specific pdf and scale variations. The script is used as follows:
+
+```bash
+$ geninitrwgt cteq66
+```
