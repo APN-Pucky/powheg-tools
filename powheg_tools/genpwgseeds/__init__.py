@@ -8,7 +8,7 @@ def main():
 
     # Adding optional argument with default value
     parser.add_argument(
-        "--n", "--number", type=int, default=2000, help="number of seeds"
+        "-n", "--number", type=int, default=2000, help="number of seeds"
     )
     parser.add_argument("-s", "--start", type=int, default=1, help="start value")
     parser.add_argument("-e", "--end", type=int, default=32768, help="end value")
