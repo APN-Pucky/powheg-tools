@@ -20,10 +20,10 @@ def main():
         # remove single file
         for f in [
             "bornequiv",
-            "pwg-{r}grid.top",
+            f"pwg-{r}grid.top",
             "pwggrid.dat",
             "pwgubound.dat",
-            "realequivregions-{r}",
+            f"realequivregions-{r}",
             "FlavRegList",
             "pwgborngrid.top",
             "pwgcounters.dat",
@@ -36,11 +36,12 @@ def main():
             "pwhg_checklimits",
             "virtequiv",
             "parameters.ol",
-            "mint_upb_{r}upb.top",
-            "mint_upb_{r}upb_rat.top",
+            f"mint_upb_{r}upb.top",
+            f"mint_upb_{r}upb_rat.top",
             "pwg-btilde-fullgrid.lock",
             "sigborn_equiv",
             "pwg-remn-fullgrid.lock",
+            f"mint_upb_{r}upb.top",
         ]:
             p = os.path.join(args.path, f)
             if os.path.exists(p):
