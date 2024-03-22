@@ -39,6 +39,7 @@ def main():
             "mint_upb_{r}upb.top",
             "mint_upb_{r}upb_rat.top",
             "pwg-btilde-fullgrid.lock",
+            "sigborn_equiv",
             "pwg-remn-fullgrid.lock",
         ]:
             p = os.path.join(args.path, f)
