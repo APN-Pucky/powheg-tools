@@ -42,6 +42,7 @@ def main():
             "sigborn_equiv",
             "pwg-remn-fullgrid.lock",
             f"mint_upb_{r}upb.top",
+            f"pwggrid-{r}.dat",
         ]:
             p = os.path.join(args.path, f)
             if os.path.exists(p):
