@@ -38,6 +38,8 @@ def main():
         "mint_upb_rmupb.top",
         "mint_upb_btlupb.top",
         "mint_upb_btlupb_rat.top",
+        "pwg-btilde-fullgrid.lock",
+        "pwg-remn-fullgrid.lock",
     ]:
         p = os.path.join(args.path, f)
         if os.path.exists(p):
