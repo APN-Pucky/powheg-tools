@@ -19,7 +19,7 @@ def main():
     args = parser.parse_args()
 
     with open(args.output, "w") as f:
-        for i in range(args.start, args.end, int(args.end / args.n)):
+        for i in range(args.start, args.end, int(args.end / args.number)):
             print(i, file=f)
 
 
