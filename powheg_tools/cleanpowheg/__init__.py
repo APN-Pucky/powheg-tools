@@ -32,6 +32,7 @@ def main():
             "realequivregions-rad",
             "pwgboundviolations.dat",
             "pwgevents.lhe",
+            "pwg-NLO.top",
             "pwg-stat.dat",
             "pwhg_checklimits",
             "virtequiv",
